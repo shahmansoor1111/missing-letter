@@ -35,8 +35,6 @@ h1 {
 
 #word {
   font-size: 38px;
-  position: relative;
-  left: 20px;
   letter-spacing: 6px;
   font-weight: bold;
   margin: 20px 0;
@@ -52,6 +50,14 @@ h1 {
   100% { transform: scale(1.1); }
 }
 
+/* ✅ Fix: input + button container */
+.input-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
 input {
   font-size: 26px;
   padding: 10px;
@@ -62,8 +68,6 @@ input {
   outline: none;
   margin-right: 10px;
   transition: 0.3s;
-  position: relative;
-  left: 30px;
 }
 
 input:focus {
@@ -82,8 +86,7 @@ button {
   cursor: pointer;
   box-shadow: 0px 6px 15px rgba(0,0,0,0.3);
   transition: transform 0.2s, box-shadow 0.2s;
-  position: relative;
-  left: 30px;
+  margin-left: 10px; /* stays aligned */
 }
 
 button:hover {
@@ -96,16 +99,14 @@ button:hover {
   font-size: 20px;
   font-weight: bold;
   min-height: 30px;
-  position: relative;
-  left:30px;
+  text-align: center; /* keeps it centered */
 }
-
 #result.success {
   color: #43e97b;
   text-shadow: 0px 0px 10px #43e97b;
 }
-
 #result.error {
   color: #ff4d6d;
   text-shadow: 0px 0px 10px #ff4d6d;
 }
+
