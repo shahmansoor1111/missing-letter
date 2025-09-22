@@ -102,7 +102,7 @@ button:hover {
   text-align: center; /* keeps it centered */
 }
 #result.success {
-  color: #43e97b;
+  color: #38ec74ff;
   text-shadow: 0px 0px 10px #43e97b;
 }
 #result.error {
